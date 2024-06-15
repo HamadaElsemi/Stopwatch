@@ -1,0 +1,528 @@
+Archive member included because of file (symbol)
+
+d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              ./main.o (__udivmodqi4)
+d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/TIMERS/TIMERS_Program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/TIMERS/TIMERS_Program.o
+LOAD ./MCAL/GIE/GIE_Program.o
+LOAD ./MCAL/EXTI/EXTI_Program.o
+LOAD ./MCAL/DIO/DIO_Program.o
+LOAD ./main.o
+LOAD d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xc68
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_15
+                0x00000078                __vector_14
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./MCAL/TIMERS/TIMERS_Program.o
+ .text          0x0000007c        0x0 ./MCAL/GIE/GIE_Program.o
+ .text          0x0000007c        0x0 ./MCAL/EXTI/EXTI_Program.o
+ .text          0x0000007c        0x0 ./MCAL/DIO/DIO_Program.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x0000007c        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.TIMER0_voidInit
+                0x0000007c       0x22 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000007c                TIMER0_voidInit
+ .text.TIMER0_voidSetPreload
+                0x0000009e        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000009e                TIMER0_voidSetPreload
+ .text.TIMER0_voidSetCTC
+                0x000000a2        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000000a2                TIMER0_voidSetCTC
+ .text.TIMER0_voidSetFastPWM
+                0x000000a6        0x2 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000000a6                TIMER0_voidSetFastPWM
+ .text.TIMER0_voidSetPhaseCorrectPWM
+                0x000000a8        0x2 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000000a8                TIMER0_voidSetPhaseCorrectPWM
+ .text.TIMER0_u8GetTimerCounterValue
+                0x000000aa        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000000aa                TIMER0_u8GetTimerCounterValue
+ .text.TIMER1_voidInit
+                0x000000ae       0x74 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000000ae                TIMER1_voidInit
+ .text.TIMER1_voidSetPreload
+                0x00000122        0xa ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000122                TIMER1_voidSetPreload
+ .text.TIMER1_voidSetCTCA
+                0x0000012c        0xa ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000012c                TIMER1_voidSetCTCA
+ .text.TIMER1_voidSetCTCB
+                0x00000136        0xa ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000136                TIMER1_voidSetCTCB
+ .text.TIMER1_u8GetTimerCounterValue
+                0x00000140       0x12 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000140                TIMER1_u8GetTimerCounterValue
+ .text.TIMER2_voidInit
+                0x00000152       0x2a ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000152                TIMER2_voidInit
+ .text.TIMER2_voidSetPreload
+                0x0000017c        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000017c                TIMER2_voidSetPreload
+ .text.TIMER2_voidSetCTC
+                0x00000180        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000180                TIMER2_voidSetCTC
+ .text.TIMER2_voidSetFastPWM
+                0x00000184        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000184                TIMER2_voidSetFastPWM
+ .text.TIMER2_voidSetPhaseCorrectPWM
+                0x00000188        0x2 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000188                TIMER2_voidSetPhaseCorrectPWM
+ .text.TIMER2_u8GetTimerCounterValue
+                0x0000018a        0x4 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000018a                TIMER2_u8GetTimerCounterValue
+ .text.TIMER_u8SetCallBack
+                0x0000018e       0x26 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000018e                TIMER_u8SetCallBack
+ .text.__vector_11
+                0x000001b4       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000001b4                __vector_11
+ .text.__vector_10
+                0x00000206       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000206                __vector_10
+ .text.__vector_9
+                0x00000258       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x00000258                __vector_9
+ .text.__vector_8
+                0x000002aa       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000002aa                __vector_8
+ .text.__vector_7
+                0x000002fc       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000002fc                __vector_7
+ .text.__vector_6
+                0x0000034e       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x0000034e                __vector_6
+ .text.__vector_5
+                0x000003a0       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000003a0                __vector_5
+ .text.__vector_4
+                0x000003f2       0x52 ./MCAL/TIMERS/TIMERS_Program.o
+                0x000003f2                __vector_4
+ .text.GIE_VidEn
+                0x00000444        0x8 ./MCAL/GIE/GIE_Program.o
+                0x00000444                GIE_VidEn
+ .text.GIE_VidDisable
+                0x0000044c        0x8 ./MCAL/GIE/GIE_Program.o
+                0x0000044c                GIE_VidDisable
+ .text.EXTI_voidInit
+                0x00000454       0x32 ./MCAL/EXTI/EXTI_Program.o
+                0x00000454                EXTI_voidInit
+ .text.EXTI_u8SetInt0SenseControl
+                0x00000486       0x42 ./MCAL/EXTI/EXTI_Program.o
+                0x00000486                EXTI_u8SetInt0SenseControl
+ .text.EXTI_u8SetInt1SenseControl
+                0x000004c8       0x42 ./MCAL/EXTI/EXTI_Program.o
+                0x000004c8                EXTI_u8SetInt1SenseControl
+ .text.EXTI_u8SetInt2SenseControl
+                0x0000050a       0x22 ./MCAL/EXTI/EXTI_Program.o
+                0x0000050a                EXTI_u8SetInt2SenseControl
+ .text.EXTI_u8Int0SetCallBack
+                0x0000052c       0x14 ./MCAL/EXTI/EXTI_Program.o
+                0x0000052c                EXTI_u8Int0SetCallBack
+ .text.__vector_1
+                0x00000540       0x52 ./MCAL/EXTI/EXTI_Program.o
+                0x00000540                __vector_1
+ .text.EXTI_u8Int1SetCallBack
+                0x00000592       0x14 ./MCAL/EXTI/EXTI_Program.o
+                0x00000592                EXTI_u8Int1SetCallBack
+ .text.__vector_2
+                0x000005a6       0x52 ./MCAL/EXTI/EXTI_Program.o
+                0x000005a6                __vector_2
+ .text.EXTI_u8Int2SetCallBack
+                0x000005f8       0x14 ./MCAL/EXTI/EXTI_Program.o
+                0x000005f8                EXTI_u8Int2SetCallBack
+ .text.__vector_3
+                0x0000060c       0x52 ./MCAL/EXTI/EXTI_Program.o
+                0x0000060c                __vector_3
+ .text.DIO_Vid_SetPinDirection
+                0x0000065e       0xe6 ./MCAL/DIO/DIO_Program.o
+                0x0000065e                DIO_Vid_SetPinDirection
+ .text.DIO_Vid_SetPinValue
+                0x00000744       0xe6 ./MCAL/DIO/DIO_Program.o
+                0x00000744                DIO_Vid_SetPinValue
+ .text.DIO_Vid_GetPinValue
+                0x0000082a       0x44 ./MCAL/DIO/DIO_Program.o
+                0x0000082a                DIO_Vid_GetPinValue
+ .text.DIO_Vid_SetPortDirection
+                0x0000086e       0x54 ./MCAL/DIO/DIO_Program.o
+                0x0000086e                DIO_Vid_SetPortDirection
+ .text.DIO_Vid_SetPortValue
+                0x000008c2       0x22 ./MCAL/DIO/DIO_Program.o
+                0x000008c2                DIO_Vid_SetPortValue
+ .text.DIO_Vid_GetPportValue
+                0x000008e4       0x28 ./MCAL/DIO/DIO_Program.o
+                0x000008e4                DIO_Vid_GetPportValue
+ .text.DIO_ConnectedPullUp
+                0x0000090c        0x2 ./MCAL/DIO/DIO_Program.o
+                0x0000090c                DIO_ConnectedPullUp
+ .text.func     0x0000090e       0x5e ./main.o
+                0x0000090e                func
+ .text.Reset    0x0000096c       0x16 ./main.o
+                0x0000096c                Reset
+ .text.Resume   0x00000982        0x6 ./main.o
+                0x00000982                Resume
+ .text.Pause    0x00000988        0x8 ./main.o
+                0x00000988                Pause
+ .text.main     0x00000990      0x2bc ./main.o
+                0x00000990                main
+ .text.libgcc   0x00000c4c       0x18 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00000c4c                __udivmodqi4
+ .text.libgcc   0x00000c64        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000c64        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000c64                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000c64        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000c64                exit
+                0x00000c64                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000c64        0x4 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000c68                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000c68
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/TIMERS/TIMERS_Program.o
+ .data          0x00800060        0x0 ./MCAL/GIE/GIE_Program.o
+ .data          0x00800060        0x0 ./MCAL/EXTI/EXTI_Program.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO_Program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060       0x1b
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./MCAL/TIMERS/TIMERS_Program.o
+ .bss           0x00800060        0x0 ./MCAL/GIE/GIE_Program.o
+ .bss           0x00800060        0x0 ./MCAL/EXTI/EXTI_Program.o
+ .bss           0x00800060        0x0 ./MCAL/DIO/DIO_Program.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 d:/diploma/atef/user library/zadic/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.TIMERS_ptfCallBackFuncArr
+                0x00800060       0x10 ./MCAL/TIMERS/TIMERS_Program.o
+ .bss.Global_pvInt2NotifcationFunction
+                0x00800070        0x2 ./MCAL/EXTI/EXTI_Program.o
+ .bss.Global_pvInt1NotifcationFunction
+                0x00800072        0x2 ./MCAL/EXTI/EXTI_Program.o
+ .bss.Global_pvInt0NotifcationFunction
+                0x00800074        0x2 ./MCAL/EXTI/EXTI_Program.o
+ .bss.Global_u8Second
+                0x00800076        0x1 ./main.o
+                0x00800076                Global_u8Second
+ .bss.Global_u8Minutes
+                0x00800077        0x1 ./main.o
+                0x00800077                Global_u8Minutes
+ .bss.Global_u8Hours
+                0x00800078        0x1 ./main.o
+                0x00800078                Global_u8Hours
+ .bss.Global_Flag
+                0x00800079        0x1 ./main.o
+                0x00800079                Global_Flag
+ .bss.Global_u8TickCounts
+                0x0080007a        0x1 ./main.o
+                0x0080007a                Global_u8TickCounts
+ *(COMMON)
+                0x0080007b                PROVIDE (__bss_end, .)
+                0x00000c68                __data_load_start = LOADADDR (.data)
+                0x00000c68                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080007b        0x0
+                0x0080007b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080007b                PROVIDE (__noinit_end, .)
+                0x0080007b                _end = .
+                0x0080007b                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1f74
+ *(.stab)
+ .stab          0x00000000      0x924 ./MCAL/TIMERS/TIMERS_Program.o
+ .stab          0x00000924      0x1f8 ./MCAL/GIE/GIE_Program.o
+                                0x204 (size before relaxing)
+ .stab          0x00000b1c      0x54c ./MCAL/EXTI/EXTI_Program.o
+                                0x558 (size before relaxing)
+ .stab          0x00001068      0x600 ./MCAL/DIO/DIO_Program.o
+                                0x60c (size before relaxing)
+ .stab          0x00001668      0x90c ./main.o
+                                0x984 (size before relaxing)
+
+.stabstr        0x00000000     0x11bd
+ *(.stabstr)
+ .stabstr       0x00000000     0x11bd ./MCAL/TIMERS/TIMERS_Program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(MP7_STOP_WATCH.elf elf32-avr)
+LOAD linker stubs
